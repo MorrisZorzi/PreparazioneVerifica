@@ -1,0 +1,5 @@
+<div *ngFor="let p of preno" style="border:solid; margin-top:10px"  (click)="onClick(p)">
+    {{p.nome}} -> {{p.data}} - {{p.ora}}
+</div>
+
+<app-dettagli [pDet] = "selectedP"></app-dettagli>

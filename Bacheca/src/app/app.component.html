@@ -1,0 +1,12 @@
+<h1>FAI LA TUA PRENOTAZIONE </h1>
+<form>
+    nome:<input #nome>
+    cognome:<input #cognome>
+    indirizzo:<input #indirizzo>
+    telefono:<input #telefono>
+    email:<input #email>
+    data <input #data>
+    ora <input #ora>
+    <button (click)="onAddPreno(nome,cognome,indirizzo,telefono,email,data,ora)">PRENOTA</button>
+</form>
+<app-lista [preno]="prenoData"></app-lista>
